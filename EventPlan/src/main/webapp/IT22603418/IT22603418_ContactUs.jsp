@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Contact Us</title>
+<title>ContactUs</title>
 <link rel="stylesheet" href="CSS/IT22603418_CStyle.css">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
