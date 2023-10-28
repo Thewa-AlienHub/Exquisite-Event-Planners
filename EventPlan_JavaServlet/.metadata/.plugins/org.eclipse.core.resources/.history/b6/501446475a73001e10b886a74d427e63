@@ -1,0 +1,7 @@
+<%@ include file="DamniduIT22602978/header1.jsp" %>
+
+<form action="/EventPlan/ViewAllEvents" method="post">
+<input type="submit" name="submit" value="DashBoard">
+</form>
+
+<%@ include file="DamniduIT22602978/Footer.jsp" %>

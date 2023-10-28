@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--boxicons-->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--css-->
+<link rel="stylesheet" href="DamniduIT22602978/css/stylesheetT.css">
+
+
+    <title>Event Aliens</title>
+</head>
+<body>
+    <!--NAV-->
+    <nav class="navT" id="navT">
+        <div class="navTmenu container" id="navT-menu">
+            <div class="navTshape"></div>
+            <div class="navTclose" id="navT-close">
+                <i class='bx bxs-left-arrow' ></i>
+            </div>
+            <div class="navTdata">
+               
+                <span class="navTgreeting">Hi,</span>
+                <h1 class="navTname">Pradicksha Pradeepraj</h1>
+            </div>
+        
+                <ul class="navTlist">
+                    <li class="navTitem">
+                        <a href="#home" class="navTlink active-link">
+                            <i class='bx bxs-home-heart' ></i>Home
+                        </a>
+                    </li>
+                    <li class="navTitem">
+                        <a href="Profile.jsp" class="navTlink ">
+                            <i class='bx bxs-user' ></i>Profile 
+                        </a>
+                    </li>
+                    <li class="navTitem">
+                        <a href="#packages" class="navTlink active-link">
+                            <i class='bx bxs-briefcase-alt-2'></i>Packages   
+                        </a>
+                    </li>
+                    <li class="navTitem">
+                        <a href="#About" class="navTlink active-link">
+                            <i class='bx bx-bookmark-heart' ></i>About Us
+                        </a>
+                    </li>
+                    <li class="navTitem">
+                        <a href="#gallery" class="navTlink active-link">
+                            <i class='bx bx-folder'></i>Gallery
+                        </a>
+                    </li>
+                    <li class="navTitem">
+                        <a href="#team" class="navTlink active-link">
+                            <i class='bx bx-group'></i> Team 
+                        </a>
+                    </li>
+                    <li class="navTitem">
+                        <a href="#reviews" class="navTlink active-link">
+                            <i class='bx bxs-message-square-dots'></i>Reviews
+                        </a>
+                    </li>
+                    <li class="navTitem">
+                        <a href="#contact" class="navTlink active-link">
+                            <i class='bx bxs-contact'></i>Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="navTsignin " id="navT-signin">
+                    <button >Log Out<i class='bx bxs-log-out-circle' ></i></button>
+                </div>
+            
+        </div>
+
+        
+
+    </nav>
+
+
+
+    <!--main-->
+    <main class="mainT" id="mainT">
+        <!--header-->
+        <header class="headerT" id="headerT">
+           <nav class="headerTnav container">
+            <a href="#" class="headerTlogo">
+                Pradicksha
+            </a>
+            <div class="headerTtoggle" id="headerT-toggle">
+                <i class='bx bxs-right-arrow' ></i>
+            </div>
+           </nav> 
+        </header>
+        <section class="sectionT container sectionTheight" id="home">
+            <h1>HOME</h1>
+        </section>
+        
+        <section class="sectionT container sectionTheight" id="packages">
+            <h1>PACKAGES</h1>
+        </section>
+        <section class="sectionT container sectionTheight" id="About">
+            <h1>ABOUT</h1>
+        </section>
+        <section class="sectionT container sectionTheight" id="gallery">
+            <h1>GALLERY</h1>
+        </section>
+        <section class="sectionT container sectionTheight" id="team">
+            <h1>TEAM</h1>
+        </section>
+        <section class="sectionT container sectionTheight" id="reviews">
+            <h1>REVIEWS</h1>
+        </section>
+        <section class="sectionT container sectionTheight" id="contact">
+            <h1>CONTACT US</h1>
+        </section>
+        
+
+
+    </main>
+    <!--main js-->
+    <script src="DamniduIT22602978/Js/Main.js"></script>
+</body>
+</html>

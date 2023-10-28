@@ -1,0 +1,92 @@
+<%@ include file="header1.jsp" %>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<form action="/EventPlan/ViewAllEvents" method="post">
+<input type="submit" name="submit" value="DashBoard">
+</form>
+	</nav>
+	<h1>USER ACCOUNT</h1>
+	
+		<c:forEach var="use" items="${userDetails}">
+
+			<c:set var="id" value="${use.id}" />
+			<c:set var="name" value="${use.name}" />
+			<c:set var="username" value="${use.username}" />
+			<c:set var="email" value="${use.email}" />
+			<c:set var="phone" value="${use.phone}" />
+			<c:set var="nic" value="${use.nic}" />
+			<c:set var="address" value="${use.address}" />
+			<c:set var="password" value="${use.password}" />
+
+			<tr>
+				<td>User ID</td>
+				<td>${use.id}</td>
+			</tr>
+			<tr>
+				<td>User Name</td>
+				<td>${use.name}</td>
+			</tr>
+			<tr>
+				<td>User User Name</td>
+				<td>${use.username}</td>
+			</tr>
+			<tr>
+				<td>User E-mail</td>
+				<td>${use.email}</td>
+			</tr>
+			<tr>
+				<td>User phone</td>
+				<td>${use.phone}</td>
+			</tr>
+			<tr>
+				<td>User Nic</td>
+				<td>${use.nic}</td>
+			</tr>
+			<tr>
+				<td>User Address</td>
+				<td>${use.address}</td>
+			</tr>
+			<tr>
+				<td>User Password</td>
+				<td>${use.password}</td>
+			</tr>
+
+		</c:forEach>
+	
+
+	<c:url value="updateUser.jsp" var="userupdate">
+		<c:param name="id" value="${id}"></c:param>
+		<c:param name="name" value="${name}"></c:param>
+		<c:param name="username" value="${username}"></c:param>
+		<c:param name="email" value="${email}"></c:param>
+		<c:param name="phone" value="${phone}"></c:param>
+		<c:param name="nic" value="${nic}"></c:param>
+		<c:param name="address" value="${address}"></c:param>
+		<c:param name="password" value="${password}"></c:param>
+	</c:url>
+
+	<a href="${userupdate}"> <input type="button" name="update"
+		value="UPDATE MY DATA" class = "col-md-12">
+	</a>
+
+	<c:url value="deleteUser.jsp" var="userdelete">
+		<c:param name="id" value="${id}"></c:param>
+		<c:param name="name" value="${name}"></c:param>
+		<c:param name="username" value="${username}"></c:param>
+		<c:param name="email" value="${email}"></c:param>
+		<c:param name="phone" value="${phone}"></c:param>
+		<c:param name="nic" value="${nic}"></c:param>
+		<c:param name="address" value="${address}"></c:param>
+		<c:param name="password" value="${password}"></c:param>
+	</c:url>
+
+	<!--  <a href="${userdelete}"> <input type="button" name="delete"
+		value="DELETE MY ACCOUNT">
+	</a>-->
+
+	<!--  <a href="#"><%=session.getAttribute("username") %></a>
+	<a href="index2.jsp">HOME</a> -->
+
+
+
+<%@ include file="Footer.jsp" %>
